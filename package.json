@@ -1,0 +1,30 @@
+{
+  "name": "mssql-mcp",
+  "version": "1.0.0",
+  "description": "Read-only Model Context Protocol server for Microsoft SQL Server",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test:connection": "node scripts/test-connection.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "sql-server",
+    "mssql",
+    "cursor",
+    "localdb"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "msnodesqlv8": "^5.2.0",
+    "mssql": "^12.5.4",
+    "zod": "^4.4.3"
+  }
+}
